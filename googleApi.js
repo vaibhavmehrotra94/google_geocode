@@ -8,8 +8,12 @@ const google_geocoding = address =>
       });
 
 module.exports = addr => new Promise((resolve, reject) => {
-   console.time("geocode_time");
+   if(g_key === "") {
+      reject("g_key Not provided");
+      return;
+   }
 
+   console.time("geocode_time");
 
    if (!addr) {
       // console.log("Address nahi mila");
