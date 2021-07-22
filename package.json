@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "prompt": "^1.0.0",
-    "xlsx": "^0.16.0"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {},
   "scripts": {
